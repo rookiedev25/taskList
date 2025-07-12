@@ -100,7 +100,7 @@ const App = () => {
                   <button
                     onClick={handleEdit}
                     value={t.id}
-                    className="bg-orange-600 text-white px-4 py-1 rounded-xl cursor-pointer font-bold"
+                    className="bg-orange-900 opacity-50 disabled text-white px-4 py-1 rounded-xl cursor-not-allowed font-bold"
                   >
                     Edit
                   </button>
