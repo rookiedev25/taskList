@@ -1,12 +1,95 @@
-# React + Vite
+# 📝 TaskList: Minimal To-Do App in React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple yet functional task manager built using **React**, **Vite**, and **Tailwind CSS**. Easily add, mark, and delete your daily tasks. Lightweight, fast, and beginner-friendly.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Demo
 
-## Expanding the ESLint configuration
+[👉 View the App on GitHub Pages](https://rookiedev25.github.io/taskList)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+
+- ➕ Add new tasks with unique IDs
+- ✅ Mark tasks as completed (with strikethrough)
+- ❌ Delete individual tasks
+- ⚙️ Built using modern React (with Hooks)
+- 💅 Styled using Tailwind CSS
+- 🌐 Deployed via GitHub Pages using `gh-pages`
+
+---
+
+## 🛠 Tech Stack
+
+- **React 19**
+- **Vite**
+- **Tailwind CSS**
+- **uuid**
+- **gh-pages**
+
+---
+
+## 🧱 Folder Structure
+
+```
+taskList/
+├── src/
+│   ├── components/
+│   │   └── NavBar.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── vite.config.js
+├── package.json
+└── README.md
+```
+
+---
+
+## 🧪 Getting Started
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/rookiedev25/taskList.git
+cd taskList
+
+# 2. Install dependencies
+npm install
+
+# 3. Start local dev server
+npm run dev
+```
+
+---
+
+## 🚀 Deployment (GitHub Pages)
+
+Ensure `package.json` has:
+
+```json
+"homepage": "https://rookiedev25.github.io/taskList",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+```
+
+Then run:
+
+```bash
+npm run deploy
+```
+
+---
+
+## 👨‍💻 Author
+
+Built with ❤️ by [@rookiedev25](https://github.com/rookiedev25)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
