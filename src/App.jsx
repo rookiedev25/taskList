@@ -58,7 +58,12 @@ const App = () => {
           />
           <button
             onClick={addTask}
-            className="bg-orange-600 text-white px-4 py-1 rounded-xl cursor-pointer font-bold"
+            className="bg-orange-600 text-white px-4 py-1 rounded-xl font-bold"
+            disabled={task.trim() === ""}
+            style={{
+              cursor: task.trim() === "" ? "not-allowed" : "pointer",
+              opacity: task.trim() === "" ? 0.5 : 1,
+            }}
           >
             Add to List
           </button>
@@ -66,7 +71,9 @@ const App = () => {
 
         {/* Task list display section */}
         <div className="taskList mt-10 rounded-xl p-3 bg-orange-50 flex-col gap-4">
-          <h1 className="font-bold border-b-1 mb-2 flex items-center justify-center py-1">Your Tasks</h1>
+          <h1 className="font-bold border-b-1 mb-2 flex items-center justify-center py-1">
+            Your Tasks
+          </h1>
           <div className="displayTasks">
             {/* Show message if no tasks are present */}
             {tasks.length === 0 && (
